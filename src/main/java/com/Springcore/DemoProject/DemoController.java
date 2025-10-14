@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DemoController {
 	
-	@GetMapping("/")
+	@GetMapping("/Welcome3")
 	public String DemoCon() {
 		return "This is For Server Check";
 	}
