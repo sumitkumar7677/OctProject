@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agrim | Empowering Agri Inputs</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: linear-gradient(120deg, #004d00, #007a33);
+      color: #fff;
+    }
+
+    /* 🌱 Navigation Bar */
+    header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(6px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      z-index: 100;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      background: linear-gradient(90deg, #00ff99, #00cc66);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #00ffcc;
+    }
+
+    /* 🌾 Hero Section */
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      background: radial-gradient(circle at center, #004d00, #001a00);
+      padding: 100px 20px 60px;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      background: linear-gradient(90deg, #00ffcc, #00ff66);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 20px;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #00ffcc; }
+      to { text-shadow: 0 0 25px #00ffcc, 0 0 50px #00ff66; }
+    }
+
+    .hero p {
+      max-width: 600px;
+      font-size: 1.2rem;
+      color: #cceedd;
+    }
+
+    .btn {
+      margin-top: 25px;
+      padding: 12px 30px;
+      background: linear-gradient(90deg, #00ff99, #00cc66);
+      border: none;
+      border-radius: 30px;
+      color: #fff;
+      cursor: pointer;
+      font-weight: bold;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 15px #00ff99;
+    }
+
+    /* 🌾 Section Styling */
+    section {
+      padding: 100px 80px;
+      text-align: center;
+    }
+
+    section h3 {
+      font-size: 2.2rem;
+      color: #00ff99;
+      margin-bottom: 20px;
+    }
+
+    section p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      color: #e0ffe0;
+      line-height: 1.6;
+    }
+
+    /* 📍 Footer */
+    footer {
+      text-align: center;
+      padding: 30px 10px;
+      background: rgba(0, 0, 0, 0.3);
+      font-size: 0.9rem;
+      color: #b3ffcc;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        padding: 10px;
+      }
+      nav a {
+        margin: 10px 5px;
+      }
+      section {
+        padding: 70px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <h1>Agrim</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#inputs">Agri Inputs</a>
+      <a href="#location">Location</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h2>Welcome to Agrim 🌿</h2>
+    <p>Empowering the agriculture ecosystem with technology and innovation — making agri inputs smarter, faster, and more accessible.</p>
+    <button class="btn" onclick="scrollToSection('about')">Learn More</button>
+  </div>
+
+  <!-- About Section -->
+  <section id="about">
+    <h3>About Agrim</h3>
+    <p>
+      Agrim is transforming the agricultural supply chain by connecting input manufacturers,
+      distributors, and retailers through a robust digital ecosystem. We enable better access to
+      high-quality agri inputs and create a transparent, efficient, and sustainable marketplace for all stakeholders.
+    </p>
+  </section>
+
+  <!-- Agri Inputs Section -->
+  <section id="inputs">
+    <h3>Agri Inputs</h3>
+    <p>
+      Our platform provides a wide range of agricultural inputs including fertilizers, seeds, pesticides,
+      and farm equipment. With real-time insights and digital tools, we ensure timely procurement and delivery
+      to empower farmers and retailers alike.
+    </p>
+  </section>
+
+  <!-- Location Section -->
+  <section id="location">
+    <h3>Our Location</h3>
+    <p>
+      Agrim HQ is located in <strong>Gurugram, Haryana, India</strong>.<br>
+      We also have regional offices and partner networks across major agricultural states to ensure
+      nationwide reach and seamless operations.
+    </p>
+    <button class="btn" onclick="window.open('https://www.google.com/maps?q=Gurugram,Haryana,India', '_blank')">View on Map</button>
+  </section>
+
+  <footer>
+    © 2025 Agrim Technologies | Empowering Agri Commerce 🌾
+  </footer>
+
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
+
+</body>
+</html>

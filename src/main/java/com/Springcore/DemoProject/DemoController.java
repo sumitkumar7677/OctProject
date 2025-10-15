@@ -10,6 +10,11 @@ public class DemoController {
 	public String DemoCon() {
 		return "This is For Server Check";
 	}
+	@GetMapping("/Welcome34")
+	public String DemoCon2() {
+		return "This is for Checking";
+	}
+	
 	
 	
 }
