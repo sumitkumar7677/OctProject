@@ -11,7 +11,7 @@ public class DemoController {
 		return "This is For Server Check";
 	}
 	@GetMapping("/Welcome34")
-	public String DemoCon2() {
+	public String DemoCon3() {
 		return "This is for Checking";
 	}
 	
